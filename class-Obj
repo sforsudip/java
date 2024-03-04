@@ -1,0 +1,34 @@
+public class Calculate {
+    int a, b, c;
+
+    public Calculate(int x, int y) {
+        a = x;
+        b = y;
+    }
+
+    public int add() {
+        c = a + b;
+        System.out.println(c);
+        return 0;
+    }
+
+    public int sub() {
+        c = a - b;
+        System.out.println(c);
+        return 0;
+    }
+
+    public int mul() {
+        c = a * b;
+        System.out.println(c);
+        return 0;
+    }
+
+    public static void main(String[] args) {
+        Calculate myobj = new Calculate(10, 5); 
+        myobj.add();
+        myobj.sub();
+        myobj.mul();
+        
+    }
+}
