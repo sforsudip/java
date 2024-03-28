@@ -1,0 +1,50 @@
+import java.util.Scanner;
+
+class calculate{
+
+    int add(int a, int b){
+        return a+b;
+    }
+    int sub(int a, int b){
+        return a-b;
+    }
+    int mul(int a, int b){
+        return a*b;
+    }
+    int div(int a, int b){
+        return a/b;
+    }
+
+
+
+public static void main(String args[]){
+    Scanner sc = new Scanner(System.in);
+    System.out.print("Enter 1st number: ");
+    int x= sc.nextInt();
+    System.out.print("Enter 2nd number: ");
+    int y= sc.nextInt();
+    System.out.print("Enter Operation Symbol: ");
+    String z= sc.next();
+    int result=0;
+    calculate c = new calculate();
+
+    if (z.equals("+")) {
+    result = c.add(x, y); 
+} else if (z.equals("-")) {
+    result = c.sub(x, y);
+} else if (z.equals("*")) {
+    result = c.mul(x, y);
+} else if (z.equals("/")) {
+    result = c.div(x, y);
+} else {
+    System.out.println("Invalid Operation");
+}
+
+ 
+    System.out.print(result);
+
+}
+
+
+
+}
